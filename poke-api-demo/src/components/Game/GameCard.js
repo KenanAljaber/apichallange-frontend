@@ -8,7 +8,7 @@ const RESPONSES ={CORRECT: "CORRECT",
                 WRONG:"WRONG"};
 
 const GameCard = ({ image , gameCard }) => {
-    const checkAnswerLink="http://pokemon-api-challange.herokuapp.com/api-kruger/pokemon/game/";
+    const checkAnswerLink="https://pokemon-api-challange.herokuapp.com/api-kruger/pokemon/game/";
     const [cardContainerStyleClass,setCardContainerStyle]=useState(" game-card-container");
     const [pokemonImage,setPokemonImage]=useState(defaultImage);
    
