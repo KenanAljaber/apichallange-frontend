@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+.app {
+    font-family: Poppins;
+    padding: 15px;
+
+}
+
+.appLogo {
+    min-width: 20px;
+    max-width: 50%;
+}
+
+.headerContainer {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.site-desc {
+    min-width: 15rem;
+    color: #058CFF;
+    max-width: 40%;
+    word-wrap: break-word;
+    margin: 0 auto;
+    color: #058CFF;
+}
+
+.title-description {
+    text-align: center;
+}
+
+.title-description h1 {
+    font-size: clamp(1rem, 1.5rem, 5rem);
+    margin: 0 auto;
+
+}
+
+.button {
+    border-radius: 8px;
+    background-color: #058CFF;
+    color: white;
+    border-style: none;
+    font-family: Poppins;
+    padding: 10px;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background-color: indianred;
+
+}
+
+.next-btn-container {
+    display: flex;
+    place-content: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.next-btn-container button {
+    width: 8rem;
+}
+
+.searchWidget {
+    background-color: #C2E3FF;
+    border-style: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    padding: 10px;
+    color: black;
+}
+
+.input:focus {
+    border: 1px solid red;
+}
+
+.SearchWidgetContainer {
+    padding: 5px;
+
+    text-align: center;
+}
+
+.searchContainer {
+    text-align-last: center;
+    display: flex;
+    margin: 0 auto;
+    align-content: center;
+    align-items: center;
+    place-content: center;
+    margin-top: 10px;
+
+}
+
+.searchContainer Button {
+    margin: 0 auto;
+    text-align: center;
+}
+
+::placeholder {
+    color: #835B5B;
+    font-size: 0.8rem;
+    float: left;
+    font-family: Poppins;
+}
+
+.listImageClass {
+    border: solid;
+    border-color: indianred;
+   
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.disc-paragraph {
+    color: #FF0505;
+    font-weight: normal;
+    font-size: clamp(0.7rem, 1rem, 1.2rem);
+}
+
+.item {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgb(205 92 92 / 50%);
+    transition: 0.25s;
+}
+
+.item:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.45);
+    transform:scale(1.009);
+}
+
+.item-title {
+    color: #058CFF;
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+.grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    margin-top: 10px;
+    place-content: center;
+}
+
+.Body {
+    margin: 1000px;
+}
+
+.loader {
+    border: 10px solid #ed7f7f;
+    border-top: 10px solid #058CFF;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    animation: spin 2s linear infinite;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.details-card-container{
+    text-align-last: center;
+    margin-top: 25px;
+    position: relative;
+}
+.next-icon-container{
+    z-index: 1000;
+    margin: px;
+    position: absolute;
+    top: 180px;
+    right: -40px;
+}
+
+.next-icon{
+    width: 4em;
+     height: 4em;
+      color: #058CFF ;
+}
+.next-icon:hover{
+    color: #CD5C5C;;
+}
+.details-body-card {
+    display: inline-flex;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.30s;
+    box-shadow: 0 4px 8px 0 rgb(5 140 255 / 50%);
+    position: relative;
+}
+
+.details-body-card:hover{
+    box-shadow: 0 4px 8px 0  rgba(0,0,0,0.45);
+    transform: scale(1.009);
+}
+
+.left-side {
+    text-align: center;
+    align-self: center;
+}
+
+.right-side {
+    align-self: flex-start;
+    text-align: center;
+}
+
+.pokemon-details-name {
+    color: #058CFF;
+
+}
+
+.pokemon-details-details {
+    padding-bottom: 5px;
+    text-align: start;
+}
+
+.pokemon-details-disc {
+    font-weight: bold;
+    color: white;
+    word-spacing: 8px;
+    font-size: clamp(0.8rem, 1.3rem, 2rem);
+    background: #CD5C5C;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 3px;
+    gap: 10rem;
+    width: fit-content;
+}
+
+.pokemon-details-disc span {
+    color: #620c0c;
+    padding: 2px 8px 2px 2px;
+    font-weight: normal;
+}
+
+.right-side button {
+    min-width: 60%;
+    margin-top: 35px;
+}
+
+.game-card-container{
+    
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgb(205 92 92 / 50%);
+    transition: 0.25s;
+    width: 85%;
+    margin: 50px auto;
+    text-align: center;
+    color: #FF0505;
+    
+}
+.game-image-constainer img{
+    width:20%;
+}
+
+.game-card-container-correct{
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(41, 212, 50, 0.8);
+    transition: 0.25s;
+    width: 85%;
+    margin: 50px auto;
+    text-align: center;
+    color: #61ff05;
+}
+
+.game-card-container-wrong{
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(241, 0, 12, 0.8);
+    transition: 0.25s;
+    width: 85%;
+    margin: 50px auto;
+    text-align: center;
+    color: #ff0505;
+    animation: rotation 0.8s linear  1 ;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }50%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+
+.game-image-constainer{
+    text-align: center;
+}
+
+.game-disc-container{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.game-disc-container p{
+    
+    color: #0057a1;
+    font-weight: 600;
+    font-size: clamp(1rem, 1.2rem, 1.4rem);
+    text-align: center;
+}
+
+.game-bottom-container{
+   
+}
+
+.game-options-container{
+    text-align: center ;
+    margin-top: 30px;
+    
+}
+
+.game-option{
+    background: #058CFF;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    color: wheat;    
+}
+
+.test{
+    float: right;
+    width: 75px;
+    height: 28px;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 3px;
+    border-radius: 8px;
+    background-color: #058CFF;
+    color: white;
+    border-style: none;
+    font-family: Poppins; 
+    margin-right: 8px;
+    transition: 2s;
+    
+}
+
+.test:hover{
+    transform: rotate(360deg) ;
+    background: #CD5C5C;   
+}
+
+
+
+@media (max-width: 420px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .listImageClass {
+        min-width: 15rem;
+    }
+
+    
+
+    .appLogo {
+        width: 50%;
+    }
+
+    .left-side {
+        display: flex;
+    }
+
+    .details-body {
+        margin: 0 auto;
+        display: grid;
+    }
+    .details-body-card{
+        display: block;
+    }
+    .next-icon-container{
+        margin-top: 250px;
+        margin-right: 15px;
+    }
+
+    .game-option{
+        font-size: 0.6rem;
+    }
+    
+}
+
+@media (min-width: 420px) and (max-width: 599px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .listImageClass {
+        min-width: 15rem;
+
+    }
+
+    .item {
+        padding: 0.2rem;
+    }
+
+    .appLogo {
+        width: 50%;
+    }
+    .details-body {
+        margin: 0 auto;
+        display: grid;
+    }
+    .details-body-card{
+        display: block;
+    }
+    .next-icon-container{
+        margin-top: 250px;
+        margin-right: 0px;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .appLogo {
+        width: 20%;
+    }
+
+    .listImageClass {
+        min-width: 16rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .listImageClass {
+        min-width: 16rem;
+    }
+
+    .appLogo {
+        width: 30%;
+    }
+
+    .details-body {
+        display: grid;
+    }
+    .next-icon-container{
+        margin-top: 50px;
+    }
+
+}
+
