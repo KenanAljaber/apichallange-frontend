@@ -3,7 +3,7 @@ import GameCard from "./GameCard";
 import { useEffect, useState } from "react";
 import axios from "axios";
 const Game = () => {
-    const gameCardgeneratorLink = "https://pokemon-api-challange.herokuapp.com/api-kruger/pokemon/game";
+    const gameCardgeneratorLink = "http://ec2-34-207-70-164.compute-1.amazonaws.com:8080/api-kruger/pokemon/game";
     const [gameCard, setGameCard] = useState(undefined);
     const fetchGameCard = async () => {
         const response = await axios.get(gameCardgeneratorLink);

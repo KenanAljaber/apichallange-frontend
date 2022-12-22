@@ -8,7 +8,7 @@ import { AiOutlineRightCircle } from 'react-icons/ai';
 const PokemonDetails = () => {
     //getting the pokemon id to load it from the back-end
     let { pokemonId } = useParams();
-    const pokemonUrlBase = "https://pokemon-api-challange.herokuapp.com/api-kruger/pokemon/"  ;
+    const pokemonUrlBase = "http://ec2-34-207-70-164.compute-1.amazonaws.com:8080/api-kruger/pokemon/"  ;
     const [pokemon, setPokemon] = useState([]);
     const [types, setTypes] = useState([]);
     const [abilities, setAbilities] = useState([]);
